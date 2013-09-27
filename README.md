@@ -30,7 +30,7 @@ Add this to the *config.xml* of the Solution.
 		<add key="AWSAccessKey" value="<aws_access_key>" />
 		<add key="AWSSecretKey" value="<aws_secret_key>" />
 	</appSettings>
-    ```
+```
 Call Trace.Close() in your main application once it has reached the end of execution. Of course, any exceptions raised and not caught, do not get written to the log file. You could flush on every message, but that would be costly performance wise. If you want to refactor it for me, I'ld be more than happy. :+1:
 
 ```cs
@@ -46,6 +46,6 @@ using System.Diagnostics;
         }
      
      
-     ```
+```
      
-  And one last thing, it of course needs the AWS SDK for .NET. You can download that using NuGet.
+And one last thing, it of course needs the AWS SDK for .NET. You can download that using NuGet.
